@@ -1,0 +1,146 @@
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background: #15202d !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    font-size: 16px !important;
+    color: #e6e6ff;    
+    margin-left: 5%;
+}
+
+.navbar-brand:hover {
+    color: #588319;
+}
+
+h4 {
+    font-family: 'Press Start 2P', cursive;
+    color: #b6babd;
+}
+
+#sidebarMenu .nav-link {
+    color: #b6babd;
+}
+
+#sidebarMenu .nav-link:hover {
+    color: #535252;
+}
+
+#sidebarMenu .social {
+    margin-left: 40px;
+}
+
+#leaderboard-link {
+    font-size: 24px;
+    color: #b6babd;
+}
+
+table {
+    background-color: #1b263a;    
+}
+
+th {
+    font-size: 20px; 
+    color: #e6e6ff;
+    outline: none;
+    text-align: center !important;
+}
+
+td {
+    font-size: 16px;
+    color: #c1c1f1;
+    text-align: center;
+}
+
+#leaderboard tr:hover {
+    background-color: #535252;    
+}
+
+.avatar {
+    width: 40%;
+    border: 3px solid #96ca38;
+    border-radius: 50%;
+}
+
+.countries {
+    border: none !important;
+    width: 18% !important;
+}
+
+#award {
+    border: none;
+    width: 36%;
+}
+
+.fa-caret-up {
+    color: #96ca38;
+    padding-left: 25px;
+}
+
+.fa-caret-down {
+    color: rgb(176, 13, 13);
+    padding-left: 25px;
+}
+
+.fa-sort {
+    padding-left: 25px;
+}
+
+/* Line with gradient */
+
+.hovertext {
+    position: relative; 
+    margin: 0 auto;
+    margin-top: 9px;
+    height: 10px; 
+    width: 110px;
+    border-radius: 12px;   
+  }
+
+#grad1 {   
+    background: linear-gradient(to right, #88fb0e,#fbff00,#ff9500, #f44804,#f92702b7,rgb(133, 3, 3));
+}
+
+#grad2 {    
+    background: linear-gradient(to right, #bbe896,#9dff00,#d4ff00, #f4e804,#efaa5c,rgb(230, 106, 4));
+}
+
+#grad3 {  
+    background: linear-gradient(to right, #96e8af,#00ffc8,#51ff00, #98f404,#efcf5c,rgb(230, 181, 4));
+}
+
+/* Tooltip on hover  */
+  
+  .hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 100px;
+    background-color: #535252;
+    color: #fff;
+    text-align: center;    
+    transition: opacity 1s ease-in-out;  
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+  }
+  
+  .hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Footer */
+
+  footer {    
+    color: #b6babd;
+    font-size: 12px;
+  }

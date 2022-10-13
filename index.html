@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <title>Analytics Chart</title>
+    <!-- Custom CSS   -->
+    <link rel="stylesheet" href="css\styles.css">	
+    <!-- Bootstrap 5   -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- fontawesome -->		
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />	
+    <!-- google fonts -->	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand px-3" href="#"><strong><i class="fa-solid fa-mountain-sun"></i> CHALLENGES DAILY UI :: 018</strong></a>
+    </nav>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <!-- SIDEBAR MENU -->
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+          <div class="position-sticky pt-5">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a id="leaderboard-link" class="nav-link active" aria-current="page" href="#">                  
+                  <strong>LEADERBOARD</strong>
+                </a>
+              </li>
+              <li class="nav-item mt-4">
+                <a class="nav-link" href="#">                 
+                  <span class="social text-center"><i class="fa-brands fa-square-twitter fa-3x"></i></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">                  
+                  <span class="social text-center"><i class="fa-brands fa-square-instagram fa-3x"></i></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">                  
+                  <span class="social text-center"><i class="fa-brands fa-square-facebook fa-3x"></i></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">        
+          <h4 class="text-center p-2"> CODING GAMES</h4>
+          <!-- TABLE WITH RANKING OF PLAYERS IN CODING COMPETION-->
+                <div class="table-responsive">
+                  <table id="leaderboard" class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">AVATAR</th>
+                        <th scope="col">RANK</th>
+                        <th scope="col">PLAYER</th>
+                        <th scope="col">COUNTRY</th>
+                        <th scope="col">DIFFICULTY</th>
+                        <th scope="col">POINTS</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><img class="avatar" src="images\hacker.png"></td>
+                        <td><img id="award" src="images\award.png"></td>
+                        <td>Dark knight</td>
+                        <td><img class="countries" src="images\australia.png"></td>
+                        <td><div class="hovertext" data-hover="Hard" id="grad1"></div></td>                                             
+                        <td>12001<i class="fa-solid fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td><img class="avatar" src="images\rabbit.png"></td>
+                        <td> 2</td>
+                        <td>Smart rabbit</td>
+                        <td><img class="countries" src="images\japon.png"></td>
+                        <td><div class="hovertext" data-hover="Hard" id="grad1"></div></td>                        
+                        <td>10990<i class="fa-solid fa-caret-down"></i></td>
+                      </tr>
+                      <tr>
+                        <td><img class="avatar" src="images\woman.png"></td>
+                        <td>3</td>
+                        <td>Lady46</td>
+                        <td><img class="countries" src="images\canada.png"></td>
+                        <td><div class="hovertext" data-hover="Medium" id="grad2"></div></td>                        
+                        <td>5556 <i class="fa-solid fa-sort"></i></td>
+                      </tr>
+                      <tr>
+                        <td><img class="avatar" src="images\astronaut.png"></td>
+                        <td>4</td>
+                        <td>Space cowboy</td>
+                        <td><img class="countries" src="images\united-kingdom.png"></td>
+                        <td><div class="hovertext" data-hover="Medium" id="grad2"></div></td>                        
+                        <td>5551 <i class="fa-solid fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td><img class="avatar" src="images\robot.png"></td>
+                        <td>5</td>
+                        <td>R2D2</td>
+                        <td><img class="countries" src="images\francia.png"></td>
+                        <td><div class="hovertext" data-hover="Easy" id="grad3"></div></td>                        
+                        <td>1002 <i class="fa-solid fa-caret-up"></i></td>
+                      </tr>
+                      <tr>
+                        <td><img class="avatar" src="images\ninja.png"></td>
+                        <td>6</td>
+                        <td>Spanish ninja</td>
+                        <td><img class="countries" src="images\spain.png"></td>
+                        <td><div class="hovertext" data-hover="Easy" id="grad3"></div></td>                        
+                        <td>1000 <i class="fa-solid fa-caret-down"></i></td>
+                      </tr>
+                                                      
+                    </tbody>
+                  </table>
+                </div>
+
+            </main>
+
+     </div>
+   </div>
+   <footer>
+     <p class="text-center">Avatar icons created by <strong>Freepik - Flaticon</strong></p>
+   </footer>
+
+</body>
+</html>
